@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Định dạng văn bản</title>
+    <style>
+        /* tên một class */
+        .bold-first-line{
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- text-shadow : thuộc tính tạo bóng chữ -->
+    <!-- text-shadow : X | Y | độ mờ | màu bóng
+     vd : text-shadow : -5px -5px 0 red : 
+     +> bóng sang trái(-5px)-> độ lệch theo chiều ngang(trục X)
+     +> bóng dịch lên trên(-5px)-> độ lệch theo chiều dọc(trục Y)
+     +>độ mờ của bóng-> số càng lớn , bóng càng mềm(0)
+     +>màu bóng (red) -->
+     
+     <!-- bóng lệch phải , xuống dưới  -->
+    <h2 style="text-shadow: 5px 5px 2px grey">
+        Dòng này được định dạng có bóng (shadow)
+    </h2>
+    <p>Văn bản bình thường</p>
+    <!-- text-align : justify : canh đều 2 bên  -->
+     <!-- text-transform : đổi kiểu chữ  -->
+      <!-- capitalize : viết hoa đầu mỗi từ  -->
+
+    <p style="text-align:center ; text-transform: capitalize">
+        hoa các kí tự đầu
+    </p>
+    <!-- uppercase : viết hoa toàn bộ -->
+
+    <p style="text-align:right;text-transform: uppercase">
+        Hoa tất cả các kí tự
+    </p>
+    <!-- lowercase : viết thường toàn bộ -->
+     <!-- none : không chuyển đổi -->
+
+    <p style="text-transform: lowercase">
+        ĐOẠN NÀY SẼ ĐƯỢC CHUYỂN VỀ CHỮ THƯỜNG
+    </p>
+    <p class="bold-first-line">
+      <!-- <span> là thẻ dùng để định dạng một phần nhỏ trong dòng văn bản. -->
+        <span style="font-size: 35px;">Đ</span>oạn văn bản này có kí tự đầu được định dạng font-size lớn , dòng đầu tiên được in đậm
+    </p>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký sự kiện</title>
+    <!-- <link> : liên kết tài nguyên bên ngoài html -->
+    <link rel="stylesheet" href="css02.css">
+</head>
+<body>
+    <div align="center">
+        <h1 class="title">CÁC SỰ KIỆN TRONG THÁNG 12/2025</h1>
+    <table class="event-table">
+        <thead >
+        <tr>
+            <th>SỰ KIỆN</th>
+            <th>ĐỊA ĐIỂM</th>
+            <th>THỜI GIAN</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr class="row-light" >
+                <td>Hội thi tay nghề điêu khắc</td>
+                <td>Tây Ninh</td>
+                <td>Từ ngày 01-04 tháng 12/2025</td>
+            </tr>
+            <tr class="row-dark">
+                <td>Triển lãm tranh sơn mài</td>
+                <td>Bình Dương</td>
+                <td>Từ ngày 10-15 tháng12/2025</td>
+            </tr>
+            <tr class="row-light">
+                <td>Hội thi bánh dân gian Nam Bộ</td>
+                <td>Vĩnh Long</td>
+                <td>Từ ngày 15-20 tháng 12/2025</td>
+            </tr>
+            <tr class="row-dark">
+                <td>Hội thi văn nghệ quần chúng</td>
+                <td>Thành phố Hồ Chí Minh</td>
+                <td>Từ ngày ngày 25-30 tháng 12/2025</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="form-container">
+        <h2 class="form-title">Đăng kí tham gia sự kiện</h2>
+        <form  action="#" method="post">
+            <div class="form-group">
+                <label>Họ và tên</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label >Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Số điện thoại</label>
+                    <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Chọn sự kiện</label>
+                <select class="form-control">
+                    <option>---Chọn sự kiện---</option>
+                    <option>Hội thi tay nghề điêu khắc</option>
+                    <option>Hội triển lãm tranh sơn mài</option>
+                    <option>Hội thi bánh dân gian Nam Bộ</option>
+                    <option>Hội thi văn nghệ quần chúng</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Ghi chú thêm</label>
+                <textarea class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                 <button class="btn">Đăng ký ngay</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

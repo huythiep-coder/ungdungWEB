@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan Document</title>
+  </head>
+  <body>
+    <h1>ĐƠN GIA NHẬP HỘI FAN ĐỘI TUYỂN BÓNG ĐÁ VIỆT NAM</h1>
+    <p>
+      Chào mừng đến với hội của những trái tim đỏ rực , cháy hết mình với đam mê❤️
+    </p>
+    <form>
+      
+      <label for="hoten">
+        Họ và tên (nhập đúng trên để chúng tôi gọi bạn đi bão:):
+      </label>
+      <br />
+      <input
+        type="text"
+        id="hoten"
+        placeholder="VD : Nguyễn Văn Toàn"
+        required
+        size="32"
+      />
+      <br /><br />
+      
+      <label for="mail">
+        Email để nhận link xem bóng đá chất lượng cao : <br />
+      </label>
+      <input
+        type="email"
+        id="mail"
+        placeholder="VD:iuanhThu@gmail.com"
+        required
+        size="35"
+      />
+      <br /><br />
+      
+      <label for="story">
+        Mô tả cảm xúc của bạn khi đội tuyển Việt Nam ghi bàn:
+      </label>
+      <br />
+      <!-- spellcheck : ktra chính tả  -->
+      <textarea
+        name="story"
+        id="story"
+        placeholder="Gõ thật lòng , đừng che giấu cảm xúc..."
+        cols="38"
+        rows="8"
+        spellcheck="true"
+      ></textarea>
+      <br /><br />
+      
+      <fieldset>
+        <legend>Giới tính của bạn :</legend>
+        <label for="male">
+          <!-- name="gender" : chỉ được chọn 1 trong 3  -->
+          <input type="radio" id="male" name="gender" value="male" /> Nam
+        </label>
+        <br />
+        <label for="female">
+          <input type="radio" name="gender" id="female" value="female" /> Nữ
+        </label>
+        <br />
+        <label for="other">
+          <input type="radio" name="gender" id="other" value="other" />Khác
+        </label>
+      </fieldset>
+      <br /><br />
+      
+       <!-- select : chỉ chọn trong danh sách  -->
+      <select style="height: 37px; width: 100%; padding: 10px; font-size: 15px">
+        <option value="">Bạn thích chơi ở vị trí nào trên sân bóng:</option>
+        <br />
+        <option value="thumon">Thủ môn</option>
+        <option value="hauve">Hậu vệ</option>
+        <option value="tiendao">Tiền đạo</option>
+        <option value="xachnuoc">Xác nước bổ cam:]]</option>
+      </select>
+      <br /><br />
+      <!-- <label for="post">
+            Bạn thích chơi ở vị trí nào trên sân bóng: <br>
+          </label>
+          <select name="post" id="post">
+            <option value="tiendao">Tiền đạo</option>
+            <option value="hauve">Hậu vệ</option>
+            <option value="thumon">Thủ môn</option>
+            <option value="chiuday">Xách nước bổ cam</option>
+          </select> -->
+
+     
+      <label for="fan-level"
+        >Mức độ yêu thích của bạn đối với đội tuyển(từ 1 tới 10):
+      </label>
+      <input
+        type="number"
+        id="fan-level"
+        name="fan-level"
+        max="10"
+        min="1"
+        step="1"
+      />
+      <br /><br />
+      <label for="favourite-player">Cầu thủ yêu thích nhất : </label>
+      <input type="text" id="favourite-player" list="players" />
+      <!-- datalist : cho phép nhập + chọn + tìm nhanh + gợi ý dữ liệu  -->
+      <datalist id="players">
+        <option value="Quang Hải"></option>
+        <option value="Công Phượng"></option>
+        <option value="Văn Lâm"></option>
+        <option value="Duy Mạnh"></option>
+        <option value="Văn Hậu"></option>
+      </datalist>
+      <br><br>
+      <p><b>Bạn có cam kết không quay lưng khi đội tuyển đá chưa được tốt?</b></p>
+      <label for="agree">Tôi xin cam kết</label>
+      <input type="checkbox" id="agree" checked name="agree">
+      <br><br>
+      <!-- type="submit" : gửi toàn bộ dữ liệu của form đến server  -->
+      <button type="submit">Gửi đơn (Chuẩn bị đi bão thôi!)</button>
+      <!-- type="reset" : đưa tất cả các ô nhập liệu trong form về trạng thái ban đầu -->
+      <button type="reset">Xóa hết , viết lại vì cảm xúc dâng trào</button>
+      <!-- type="button" : nút bấm  -->
+    </form>
+  </body>
+</html>
