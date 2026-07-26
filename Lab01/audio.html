@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        h2{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Audio Player</h2>
+
+    <!--   controls : điều khiển âm thanh 
+    autoplay : tự động phát
+    muted:tắt tiếng     -->
+
+    <!--   ../ : về thư mục cha    -->
+    <audio controls autoplay muted>
+        <source src="../upload/audio.m4a" type="audio/mpeg">
+        Trình duyệt không hỗ trợ audio này.
+    </audio>
+    <h2>Video Player</h2>
+    <video width="320" height="240" controls autoplay muted>
+        <source src="../upload/video.mp4" type="video/mp4">
+        Trình duyệt không hỗ trợ video
+    </video>
+    <h2>Youtube Player</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vlybnec0TDo?si=_jG7PMT9-aZwIbzS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng web</title>
+</head>
+<body>
+    <div>
+        <div align="center" >
+        <h2>BÀI KIỂM TRA CHƯƠNG 2</h2> <br>
+        <b>Môn học : </b><i>Mạng máy tính</i> <br>
+        <b>Mã số sinh viên :</b><i>12355</i> <br>
+        <b>Họ và tên : </b><i>Nguyễn Văn A</i>
+        <hr color="blue">
+        <a href="index.html">Trang chủ</a>
+        <a href="content.html">Nội dung môn học</a>
+        <a href="register.html">Đăng ký</a>
+    </div>
+    <div align="center">
+        <h2>ĐĂNG KÝ THAM GIA DIỄN ĐÀN</h2>
+        <!-- action="địa chỉ": gửi dữ liệu đi đâu , method : phương thức gửi -->
+         <!-- # trong này là ở lại chính trang hiện tại -->
+        <!-- post : dữ liệu ẩn trên thanh địa chỉ , get : dữ liệu hiện trên thanh địa chỉ -->
+
+        <form action="#"  method="post">
+            <table border="1" bgcolor="yellow" cellpadding="5" >
+                <tr>
+                    <td>Tên đăng nhập</td>
+                    <td>
+                        <!-- <input> - Dùng khi nhập một dòng -->
+                        <!-- <input placeholder="Nhập họ tên"> : nhập họ tên mờ bên trong ô  -->
+                        <!-- <input required> : bắt buộc nhập   -->
+
+                        <input type="text" name="usename" placeholder="Nhập tên đăng nhập" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu</td>
+                    <td>
+                        <!-- <input type="password"> hiển thị ****** -->
+                        <!-- <input type="text"> : nhập văn bản -->
+                        <!-- <input name="username"> : tên dữ liệu gửi lên server -->
+
+
+                        <input type="password" name="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <!-- <input type="radio" name="gender"> Nam
+                        <input type="radio" name="gender"> Nữ : chỉ cho chọn một -->
+                        <!-- <input type="checkbox" checked> : được tích sẵn -->
+
+                        <input type="radio" name="gender" value="Nam" checked>Nam
+                        <input type="radio" name="gender" value="Nữ" checked>Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>ngày sinh</td>
+                    <td>
+                        <!-- <input type="date"> : có lịch để chọn -->
+
+                        <input type="date" name="birthday" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <!-- <input type="email"> : chỉ cho nhập email hợp lệ -->
+
+
+                        <input type="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ngôn ngữ lập trình yêu thích nhất</td>
+                    <td>
+                        <select name="language" style="width: 200px;" required>
+                            <!-- <input disabled> : không cho nhập  -->
+                            <!-- <option selected>
+                                HTML
+                            </option> : được chọn sẵn  -->
+                            <!-- <select multiple> : cho chọn nhiều  -->
+
+                            <option value="" selected disabled>Chọn ngôn ngữ---</option>
+                            <option value="cpp">C++</option>
+                            <option value="python">Python</option>
+                            <option value="html">HTML</option>
+                            <option value="Csharp">C#</option>
+                            <option value="java">JavaScript</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qui định khi tham gia diễn đàn</td>
+                    <td>
+                        <!-- <textarea> : Dùng khi người dùng nhập nhiều dòng. -->
+                        <textare rows="10" cols="35">
+                            Bài viết phải nghiêm túc , không chứa quảng cáo , không có nội dung tiêu cực 🐧.
+                        </textare>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <!-- <input type="submit"> : nút gửi form -->
+
+                        <button type="submit">
+                            <img src="" alt="Đăng ký" width="100">
+                        </button>
+                        <!-- <input type="reset"> : xóa dữ liệu trong form
+                          -->
+                        <button type="reset">
+                            <img src="" alt="Hủy" width="100">
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- <input type="number"> : chỉ nhập số
+<input type="file"> : tải ảnh , PDF... -->
+
+
+
+
+<!-- <input type="checkbox"> Java
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+=> ☐ Java
+   ☐ HTML
+   ☐ CSS            Có thể chọn nhiều -->
+
+
+
+
+<!-- <select>
+<option>HTML</option>
+<option>CSS</option>
+<option>JavaScript</option>
+</select>  => ▼ HTML      : chọn danh sách có sẵn -->
+
+
+<!-- <button>Đăng nhập</button> : tạo nút bấm
+<input readonly> : chỉ cho đọc
+<input minlength="6"> : ít nhất 6 kí tự
+<input maxlength="20"> : tối đa 20 kí tự -->
