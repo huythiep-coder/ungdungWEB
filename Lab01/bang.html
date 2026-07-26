@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng học tập</title>
+    <style>
+         /* KHÔNG THỂ THIẾU */
+        /* định dạng cho bảng */
+        table{
+            width :80%;
+            /* khoảng rộng trái và phải tự chia đều */
+            margin :auto;
+            /* một đường viền */
+            border-collapse:collapse;
+        }
+        /* tạo viền cho table , td, th */
+        /* solid : đường liền */
+        table,th,td{border:3px solid gray;}
+        /* khoảng cách từ chữ tới đường viền */
+        th,td{
+            padding:9px;
+        }
+        /* toàn bộ thead được tô màu xám  */
+        thead{
+            background:lightgray;
+        }
+        /* tạo màu và nền cho class : sử dụng "." */
+        .dat,.khongdat , h2 , .so , .tong{
+            text-align : center ;
+             font-weight : bold;
+        }
+        .dat{
+            background: yellow;
+            color : black;
+        }
+        .khongdat{
+            background:red;
+            color:white;
+        }
+        .so{
+            background:white;
+            color : green;
+        }
+        .tong{
+            background: rgb(0, 255, 132);
+            color : red;
+        }
+    </style>
+</head>
+<body>
+    <h2 >Kết quả học tập</h2>
+    <table>
+        <!-- thead : tiêu đề bảng  -->
+        <thead>
+            <!-- tr : 1 hàng  -->
+            <tr>
+                <!-- colspan = gộp ô theo chiều ngang ➡️ -->
+                <!-- rowspan = gộp ô theo chiều dọc ⬇️ -->
+                <!-- họ tên chiếm 2 hàng  -->
+                <th rowspan ="2">Họ tên</th>
+                <!-- môn học chiếm 3 cột  -->
+                <th colspan ="3">Môn học</th>
+                <th rowspan ="2">Kết quả</th>
+            </tr>
+            <!-- 3 cột con của môn học -->
+            <tr>
+                <th>Toán</th>
+                <th>Văn</th>
+                <th>Ngoại ngữ</th>
+            </tr>
+        </thead>
+        <!-- tbody : dữ liệu chính  -->
+        <tbody>
+            <tr>
+                <td>Trần Văn Thành</td>
+                <td>8</td>
+                <td>5</td>
+                <td>7</td>
+                <td class="dat">Đạt</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Tuyết</td>
+                <td>8</td>
+                <td>9</td>
+                <td>5</td>
+                <td class="dat">Đạt</td>
+            </tr>
+            <tr>
+                <td>Lê Thanh Son</td>
+                <td>4</td>
+                <td>9</td>
+                <td>6</td>
+                <td class="khongdat">Không đạt</td>
+            </tr>
+        </tbody>
+        <!-- tfoot : phần cuối bảng  -->
+        <tfoot>
+            <tr>
+                <td colspan ="4" class="tong">Tổng số học sinh đạt</td>
+                <td class="so">2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
