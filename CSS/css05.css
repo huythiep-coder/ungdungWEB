@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial , Helvetica , sans-serief;
+    background:#181818;
+    color : white;
+}
+header{
+    display:flex;
+    /* Canh chỉnh các phần tử theo ngang  */
+     /* space-between : Đẩy phần tử đầu tiên sang sát bên trái, phần tử cuối cùng sang sát bên phải và chia đều khoảng trống ở giữa. */
+    justify-content:space-between;
+    /* canh giữa theo chiều dọc  */
+    align-items:center;
+    background:black;
+    padding:15px 30px;
+}
+.logo{
+    color:red;
+    font-weight:bold;
+    font-size:30px;
+}
+nav a{
+    color:white;
+    /* xóa kiểu trang trí của văn bản  */
+    /* overline: Gạch phía trên ; underline : Gạch chân ;line-through : Gạch ngang giữa chữ. */
+    text-decoration:none;
+    margin-left:20px;
+}
+nav a:hover{
+    color :rgb(242, 255, 0);
+}
+.banner{
+    /* Canh các phần tử con về cuối của trục dọc. */
+    /* justify-content : điều khiển theo trục ngang. */
+    /* flex-start : lên trên ; center : ở giữa ; flex-end: xuống dưới  */
+
+    align-items:flex-end;
+    display:flex;
+    height:100px;
+    /* nếu hình nhỏ , tự phóng kín banner; */
+
+    background-size:cover;
+    /* canh giữa màn hình */
+
+    background-position:center;
+    padding:30px;
+}
+.movie-section{
+    padding:30px;
+}
+.movie-section h2{
+    margin-bottom:20px;
+}
+.movies{
+    display:flex;
+    gap:20px;
+}
+.movies img{
+    width:150px;
+    border-radius:6px;
+    cursor:pointer;
+    height:300px;
+    /* hiệu ứng mượt  */
+    transition:.3s;
+}
+.movies img:hover{
+    /* phóng to , thu nhỏ  */
+    transform:scale(1.1);
+    box-shadow:0 8px 20px rgba(0,0,0,.7);
+}
+
+/* Chữ trong thẻ (div, p, button, td,...)	=>  text-align
+Các phần tử con (div, button, img, card,...) trong Flexbox	=> align-items
+Các phần tử con theo chiều ngang trong Flexbox=> justify-content */
+
+/* background-image   |||||	Đặt ảnh nền
+background-size	    ||| Điều chỉnh kích thước ảnh nền
+background-position  ||| 	Điều chỉnh vị trí ảnh nền
+background-repeat	   |||   Lặp hoặc không lặp ảnh
+background-attachment|||	   Ảnh cuộn cùng trang hoặc cố định
+background-color	   |||  Màu nền */
